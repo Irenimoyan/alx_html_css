@@ -5,6 +5,8 @@ body{
     margin: 0 ;
 }
 
+.works_on_smartphone,
 main{
+    flex-direction: column;
     flex:1;
 }
