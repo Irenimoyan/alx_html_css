@@ -1,0 +1,160 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: lightgray;
+    color: #333;
+    line-height: 1.6;
+    background-image: url(/img/backgroundimg.png);
+    background-size: 90rem 43.5rem;
+    background-repeat: no-repeat;
+  }
+  
+  /* Header */
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    background-repeat: no-repeat;
+    padding: 1rem;
+  }
+  
+  .logo {
+    height: 20px;
+  }
+
+  .main-nav{
+    display: flex;
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: .5rem 50rem;
+    padding: 0;
+
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color:transparent;
+  }
+  .hero-content{
+    display: block;
+    margin: 2rem;
+  }
+  
+  .hero-title {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: -10px;
+  }
+  
+  .hero-description{
+    color: #fff;
+    margin: 1px 40px;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  span{
+    gap: 2rem;
+  }
+  
+  .cta-button {
+    display: flex;
+    margin: 1px 36rem;
+    background-color: #c271ff;
+    color: white;
+    padding: 0.5rem 1.5rem;       /* Slightly smaller padding */
+    border: none;
+    border-radius: 60px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);  /* Soft shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);  /* Slightly stronger shadow on hover */
+  }
+  
+  
+  /* Features Section */
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+    /* background-color: #fff; */
+  }
+  .learn{
+    color: #c271ff;
+  }
+  
+  .feature {
+    text-align: center;
+    max-width: 300px;
+    color: #ffff;
+  }
+  
+  .feature img {
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .feature h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+
+
+  /* part_1_testimonials */
+.testimonial{
+/* position:fixed; */
+display: flex;
+background-color: #c271ff;
+width: 1440px;
+height: 15rem;
+left: 0px;
+top: 1048px;
+color: #fff;
+
+}
+.testimonial img{
+    margin: 15px;
+    border-radius: 50%;
+    width: 8rem;
+}
+
+.testimonial blockquote{
+    margin-top: 30px;
+}
+
+
+  
+  /* Footer */
+  .main-footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f1f1f1;
+    color: #777;
+    font-size: 0.875rem;
+  }
+  
