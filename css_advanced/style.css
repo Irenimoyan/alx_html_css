@@ -7,11 +7,11 @@
   
   body {
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: lightgray;
+    background-color: hsl(0, 0%, 100%);
     color: #333;
     line-height: 1.6;
     background-image: url(/img/backgroundimg.png);
-    background-size: 90rem 43.5rem;
+    background-size: 100% 44rem;
     background-repeat: no-repeat;
   }
   
@@ -77,7 +77,7 @@
   
   .cta-button {
     display: flex;
-    margin: 1px 36rem;
+    margin: 1px 30rem;
     background-color: #c271ff;
     color: white;
     padding: 0.5rem 1.5rem;       /* Slightly smaller padding */
@@ -128,13 +128,11 @@
   /* part_1_testimonials */
 .testimonial{
 /* position:fixed; */
-display: flex;
 background-color: #c271ff;
-width: 1440px;
-height: 15rem;
-left: 0px;
-top: 1048px;
-color: #fff;
+  color: #ffffffff;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
 
 }
 .testimonial img{
@@ -147,8 +145,196 @@ color: #fff;
     margin-top: 30px;
 }
 
+/* School Page */
+.call-to-action{
+  padding: 60px 20px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
 
-  
+.call-to-action h2{
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+.call-to-action h2 span{
+  color: #c271ff;
+  font-weight: 600;
+}
+.cards-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.container {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+/* .container:hover {
+  transform: translateY(-5px);
+} */
+/* Top Image with play overlay */
+.container .thumbnail {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+}
+.container .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: white; */
+  border-radius: 50%;
+  padding: 14px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+/* card content */
+.container h3 {
+  font-size: 1.1rem;
+  margin: 15px 10px 5px;
+  text-align: left;
+}
+.container p {
+  font-size: 0.9rem;
+  margin: 0 10px 10px;
+  text-align: left;
+  color: #555;
+}
+
+/* Author + Time */
+.container .meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+.container .meta img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.container .meta h4 {
+  font-size: 0.9rem;
+  margin-left: 8px;
+  color: #a55eea;
+}
+.container .time {
+  font-size: 0.8rem;
+  color: #a55eea;
+  font-weight: bold;
+}
+/* Rating stars */
+.container .stars {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.membership-section{
+  background-color: #0b1120;
+  color: #ffffffff;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.membership-section h2{
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 300;
+  color: #ffffff;
+}
+.membership-section h2 span{
+  color: #a55eea;
+  font-weight: 600;
+}
+.features{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.feature-item{
+  width: 180px;
+}
+.feature-item img{
+  width: 40px;
+  margin-bottom: 15px;
+}
+
+.feature-item h3{
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.feature-item p{
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+/* Button styling */
+
+.register-btn{
+  display: inline-block;
+  background: linear-gradient(90deg, #a55eea, #c471f5);
+  color: #ffff;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 10px rgba(165, 94, 234, 0.3);
+  transition: background 0.3s ease;
+}
+.register-btn:hover{
+  background: linear-gradient(90deg, #c471f5, #a55eea);
+}
+
+.faq-section{
+  padding: 60px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.faq-section h2{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.faq-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+.faq-item{
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.faq-item p{
+  font: size 0.95rem;
+  line-height: 1.6;
+  color: #555;
+}
+
   /* Footer */
   .main-footer {
     text-align: center;
