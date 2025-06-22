@@ -2,21 +2,7 @@
 
 This project is a fully responsive landing page for a fictional **Headphones** brand. It is designed to adapt seamlessly between desktop and mobile views, delivering an engaging user experience across all devices.
 
-## 🌐 Live Demo
 
-[Click here to view the live demo](#) *(replace with your live URL if hosted)*
-
----
-
-## 📸 Preview
-
-### 💻 Desktop
-![Desktop View](./img/desktop-preview.png)
-
-### 📱 Mobile
-![Mobile View](./img/mobile-preview.png)
-
----
 
 ## 🔧 Features
 

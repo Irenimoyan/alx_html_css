@@ -40,13 +40,59 @@ body{
 .nav-links li a{
     text-decoration: none;
     color: #fff;
-    font-size: 0.9rem
+    font-size: 0.9rem;
+    transition: transform 0.3s ease, opacity 0.3 ease;
+}
+.nav-links li a:hover{
+    color: #e85d75;
+    font-size: large;
+    transform: scale(1.1) rotate(3deg);
+    opacity: 0.95;
 }
 
 .hamburger{
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
     font-size: 1.8rem;
     color: #fff;
+}
+
+.hamburger span{
+    height: 3px;
+    background: #fff;
+    border-radius: 3px;
+    transition: all 0.3 ease;
+}
+/* Responsive menu for 480px or less */
+
+@media  screen and(max-width:480px) {
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        background-color: #111;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+
+    .nav-links.active{
+        display: flex;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+    .hamburger{
+        display: flex;
+    }
+}
+/* Optional Animation */
+@keyframes fadeIn{
+    from{opacity: 0; transform: translateY(-10px);}
+    to{opacity: 1; transform: translateY(0);}
 }
 
 .hero-content{
@@ -139,7 +185,7 @@ body{
 
 /* Our results  Section*/
 .results{
-    background: url() no-repeat center;
+    background: url(/img/seond\ bckg.png) no-repeat center;
     background-size: cover;
     padding: 60px 20px;
     color: #fff;
@@ -181,6 +227,11 @@ body{
     justify-content: center;
     align-items: center;
     color: white;
+    transition: transform 0.3s ease, opacity 0.3 ease;
+}
+.result-card:hover{
+    transform: scale(1.1) rotate(3deg);
+    opacity: 0.95;
 }
 
 .result-card .percent{
@@ -193,3 +244,92 @@ body{
     font-size: 12px;
     margin-top: 5px;
 }
+
+/* Contact Section */
+
+.contact{
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+}
+.contact form{
+    max-width: 400px;
+    margin: 0 auto;
+    display: grid;
+    gap: 15px;
+}
+
+.contact input, .contact textarea{
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+
+.contact button{
+    background: #ff6565;
+    color: white;
+    border: none;
+    padding:  12px;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+.contact button:hover{
+    opacity: 0.9;
+}
+
+footer{
+    background-color: #061e38;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    flex-wrap: wrap;
+}
+
+footer .socials i{
+    margin-left:15px;
+    font-size: 1.2rem;
+    cursor:pointer;
+}
+
+footer .socials i:hover{
+    color: #ff6565;
+}
+
+@media (max-width:480px) {
+    .navbar{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .results .result-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .what-we-do .services{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+}
+
+.service:hover{
+    transform: scale(1.1) rotate(-2deg);
+    opacity: 0.9;
+}
+
+

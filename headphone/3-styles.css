@@ -13,7 +13,7 @@ body{
 }
 
 .hero{
-    background: url() no-repeat center center/cover;
+    background: url(/img/Screenshot\ 2025-06-22\ 080431.png) no-repeat center center/cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -139,7 +139,7 @@ body{
 
 /* Our results  Section*/
 .results{
-    background: url() no-repeat center;
+    background: url(/img/seond\ bckg.png) no-repeat center;
     background-size: cover;
     padding: 60px 20px;
     color: #fff;

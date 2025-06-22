@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Headphones Landing</title>
-    <link rel="stylesheet" href="1-styles.css" />
+    <link rel="stylesheet" href="8-styles.css" />
     <link rel="stylesheet" href="holberton_school-icon.css">
 </head>
 
@@ -15,13 +15,16 @@
             <div class="logo">
                 <img src="/img/headphonebg.jpeg" alt="Headphones logo">
             </div>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#">what we do</a></li>
                 <li><a href="#">our results</a></li>
                 <li><a href="#">contact us</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger">
                 ☰
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
         <div class="hero-content">
@@ -34,6 +37,7 @@
             </p>
         </div>
     </header>
+    <!-- What We do Section -->
     <section class="what-we-do">
         <div class="section-header">
             <h2>What we do…</h2>
@@ -69,8 +73,62 @@
             </div>
         </div>
     </section>
+    <!-- Result Section -->
+    <section class="results">
+        <div class="results-content">
+            <h2>Our results speak for themselves</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <div class="result-cards">
+                <div class="result-card">
+                    <p class="percent">+2%</p>
+                    <p class="desc">Lorem ipsum dolor</p>
+                </div>
+                <div class="result-card">
+                    <p class="percent">+2%</p>
+                    <p class="desc">Lorem ipsum dolor</p>
+                </div>
+                <div class="result-card">
+                    <p class="percent">+2%</p>
+                    <p class="desc">Lorem ipsum dolor</p>
+                </div>
+                <div class="result-card">
+                    <p class="percent">+2%</p>
+                    <p class="desc">Lorem ipsum dolor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact us</h2>
+        <form>
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
+            <textarea placeholder="Your message"></textarea>
+            <button type="submit">CALL TO ACTION</button>
+        </form>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">HEADPHONES</div>
+            <div class="socials">
+                <i class="holberton_school-icon-ic_instagram"></i>
+                <i class="holberton_school-icon-ic_facebook"></i>
+                <i class="holberton_school-icon-ic_twitter"></i>
+            </div>
+        </div>
+        <p>&copy;headphones 2020</p>
+    </footer>
+      
       
       
 </body>
-
+    <script src="8-script.js"></script>
 </html>

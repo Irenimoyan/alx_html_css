@@ -12,7 +12,7 @@ body{
 }
 
 .hero{
-    background: url() no-repeat center center/cover;
+    background: url(/img/Screenshot\ 2025-06-22\ 080431.png) no-repeat center center/cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
