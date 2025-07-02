@@ -1,4 +1,3 @@
-
 # 🎧 Headphones Landing Page
 
 This project is a fully responsive landing page for a fictional **Headphones** brand. It is designed to adapt seamlessly between desktop and mobile views, delivering an engaging user experience across all devices.
